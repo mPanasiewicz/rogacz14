@@ -13,10 +13,10 @@ services:
 #      - /path/to/mariadb/data/on/host:/var/lib/mysql # I want to manage volumes manually.
 
   php:
-    image: wodby/wordpress:4-7.1-2.2.0
+#    image: wodby/wordpress:4-7.1-2.2.0
 #    image: wodby/wordpress:4-7.0-2.2.0
 #    image: wodby/wordpress-php:7.0-2.2.0
-#    image: wodby/wordpress-php:7.1-2.2.0
+    image: wodby/wordpress-php:7.1-2.2.0
     environment:
       PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S mailhog:1025
       # PHP_XDEBUG: 1
@@ -24,7 +24,7 @@ services:
       # PHP_XDEBUG_REMOTE_CONNECT_BACK: 0         # This is needed to respect remote.host setting bellow
       # PHP_XDEBUG_REMOTE_HOST: "10.254.254.254"  # You will also need to 'sudo ifconfig lo0 alias 10.254.254.254'
     volumes:
-      - codebase:/var/www/html
+      - /Users/maciejpanasiewicz/rogacz_blog/rogacz14:/var/www/html
 # Options for macOS users (http://docs.docker4wordpress.org/en/latest/macos)
 #      - codebase:/var/www/html:cached # User-guided caching
 #      - docker-sync:/var/www/html # Docker-sync
@@ -38,7 +38,7 @@ services:
       NGINX_BACKEND_HOST: php
       NGINX_SERVER_ROOT: /var/www/html
     volumes:
-      - codebase:/var/www/html
+      - /Users/maciejpanasiewicz/rogacz_blog/rogacz14:/var/www/html
 # Options for macOS users (http://docs.docker4wordpress.org/en/latest/macos)
 #      - codebase:/var/www/html:cached # User-guided caching
 #      - docker-sync:/var/www/html # Docker-sync
