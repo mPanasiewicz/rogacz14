@@ -820,7 +820,7 @@ span + .edit-link:before,
 
 .site {
 	background-color: #fff;
-	max-width: 1260px;
+	max-width: 100%;
 	position: relative;
 }
 
@@ -847,7 +847,7 @@ span + .edit-link:before,
 
 .site-header {
 	background-color: #000;
-	max-width: 1260px;
+	max-width: 100%;
 	position: relative;
 	width: 100%;
 	z-index: 4;
@@ -1064,7 +1064,7 @@ span + .edit-link:before,
 .site-content .entry-meta,
 .page-content {
 	margin: 0 auto;
-	max-width: 474px;
+	max-width: 80%;
 }
 
 .page-content {
@@ -1183,6 +1183,7 @@ a.post-thumbnail:hover {
 .site-content .entry-meta {
 	background-color: #fff;
 	margin-bottom: 8px;
+	max-width:100%;
 }
 
 .site-content footer.entry-meta {
@@ -1933,7 +1934,7 @@ a.post-thumbnail:hover {
 
 .comments-area {
 	margin: 48px auto;
-	max-width: 474px;
+	max-width: 80%;
 	padding: 0 10px;
 }
 
@@ -2242,7 +2243,6 @@ a.post-thumbnail:hover {
 .widget a {
 	color: #fff;
 }
-
 .widget a:hover {
 	color: #41a62a;
 }
