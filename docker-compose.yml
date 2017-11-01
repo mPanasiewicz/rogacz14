@@ -8,9 +8,11 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
-#    volumes:
+    ports:
+      - 3307:3306
+    volumes:
 #      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
-#      - /path/to/mariadb/data/on/host:/var/lib/mysql # I want to manage volumes manually.
+      - /Users/maciejpanasiewicz/rogacz_blog/mysql:/var/lib/mysql # I want to manage volumes manually.
 
   php:
 #    image: wodby/wordpress:4-7.1-2.2.0

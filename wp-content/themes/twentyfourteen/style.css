@@ -2556,7 +2556,9 @@ a.post-thumbnail:hover {
 	border-top: 1px solid rgba(255, 255, 255, 0.2);
 	padding: 8px 0 9px;
 }
-
+img.page_image {
+	margin-top: 30px;
+}
 .widget_archive li:first-child,
 .widget_categories li:first-child,
 .widget_links li:first-child,
